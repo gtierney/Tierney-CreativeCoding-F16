@@ -14,6 +14,9 @@ function draw () {
 	for (var i=0; i < width; i = i+10) {
   		line(i, 0, i, height);
 	}
+
+	fill(0,0,0);
+	noStroke();
 //top right 
 
 	quad(width/2, 0, 600, 0, width, height/2, 600, height/2);
@@ -25,7 +28,7 @@ function draw () {
 //bottom right
 	quad(600, height/2, width, height/2, 600, height, width/2, height);
 	
-	stroke(0,0,0);
+	stroke(255,255,255);
 	strokeWeight(rectwidth);
 	//top left
 	for (var i = 5; i < height/2; i = i+7) {
